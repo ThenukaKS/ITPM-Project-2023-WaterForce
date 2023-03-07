@@ -4,11 +4,12 @@ const app = express();
 require("dotenv").config();
 const cors = require("cors");
 const connectDB = require("./db/connect");
-
+const donateRoute = require("./routes/donate.route");
 app.use(express.json());
 app.use(cors());
 
 //routes
+app.use("/api/donate", donateRoute);
 
 //error middleware
 
