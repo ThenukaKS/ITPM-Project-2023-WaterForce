@@ -1,0 +1,11 @@
+{
+  "name": "itpm",
+  "version": "1.0.0",
+  "description": "This web application could help individuals and communities in need of clean water and sanitation to connect with the resources and support they need to improve their health and well-being",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
