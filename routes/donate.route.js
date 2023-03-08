@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const {addDonate,getAllDonates} = require("../controller/donate.controller");
+const {addDonate,getAllDonates ,getSingleDonation} = require("../controller/donate.controller");
 
 router.route("/").post(addDonate);
 router.route("/").get(getAllDonates);
+router.route("/:id").get(getSingleDonation);
 
 // router.route("/donate").get(addDonate);
 // router.route("/:id/donate").delete(addDonate);
