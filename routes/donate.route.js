@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const {addDonate} = require("../controller/donate.controller");
+const {addDonate,getAllDonates} = require("../controller/donate.controller");
 
 router.route("/").post(addDonate);
-
+router.route("/").get(getAllDonates);
 
 // router.route("/donate").get(addDonate);
 // router.route("/:id/donate").delete(addDonate);
